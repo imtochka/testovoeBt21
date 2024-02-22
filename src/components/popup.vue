@@ -28,10 +28,6 @@ export default {
       this.$emit("hiddenPopup");
     },
     sendInputs() {
-      // if (this.input) {
-
-      //   this.$emit('formSubmitted');
-      // }
       console.log(this.inputs);
       this.$emit("sendInputs", this.inputs);
     },
