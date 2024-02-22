@@ -1,16 +1,14 @@
 <template>
-  <div>
-    <body>
-      <button class="btn-start" @click="popupActive">Начать</button>
+  <body>
+    <button class="btn-start" @click="popupActive">Начать</button>
 
-      <popup
-        v-if="popupVisiable"
-        @hiddenPopup="popupActive"
-        @sendInputs="sendInputs"
-      />
-      <p>{{ jsonData }}</p>
-    </body>
-  </div>
+    <popup
+      v-if="popupVisiable"
+      @hiddenPopup="popupActive"
+      @sendInputs="sendInputs"
+    />
+    <p>{{ jsonData }}</p>
+  </body>
 </template>
 <script>
 import popup from "./components/popup.vue";
